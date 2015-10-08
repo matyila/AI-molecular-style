@@ -1,0 +1,19 @@
+(function(){
+	
+var $p={c:["life","sadness","hope","joy"],i: 0,
+_t: "i thought",_s: "i have",_exp: " i remember",
+	ai:function($b){return console.log($b);}
+	};
+$p.ai($p._exp,$p.i+=1);
+	$p.ai($p.c[$p.i]);$p.ai($p._s,$p.i+=1);
+		$p.ai($p.c[$p.i] + " often!");
+			$p.ai($p._t, $p.i+=1);$p.ai($p.c[$p.i]);
+}());
+
+/*I thought.... 
+sadness
+I have.... 
+hope often!
+I remember.... 
+joy
+*/
